@@ -1,0 +1,12 @@
+﻿@model List<DZ_25_03_21.Models.Person>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@foreach (var per in Model)
+{
+    <div class="rounded p-2 m-1" style="display: block; background-color:#D8D9DB">
+        <div>ID: @per.Id</div>
+        <div>ФИО: @per.LastName @per.FirstName @per.MiddleName</div>
+    </div>
+}
